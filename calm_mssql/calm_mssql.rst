@@ -59,9 +59,11 @@ Configure Blueprint Variables
 
 The following Blueprint variables should be configured before use: 
 
-On the SQL Service, set the variable "install_location" to external to download ISO from internet, or internal to download from a file share. If set to external, no further variables need to be modified.
+On the SQL Service, set the variable "install_location" to external to download ISO from the internet, or internal to download from a file share. If set to external, no further variables need to be modified.
 
-If set to internal, you will need to fill out the following variables:
+.. note:: For Tech Summit we will be using the internal method
+
+Since we are using the internal method, you will need to fill out the following variables:
 
 - file_share_user
 - file_share_password
