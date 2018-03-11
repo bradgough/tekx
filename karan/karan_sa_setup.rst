@@ -89,7 +89,7 @@ The steps for deploying Karan are as follows.
  
     > services.msc
  
-Configuring Windows target VMs
+**Configuring Windows target VMs**
  
 For Karan to have access to the Windows target/client VMs, the following commands must be run. In most cases, these commands would be run as part of preparing a Windows image for use with Sysprep.
  
