@@ -63,12 +63,13 @@ On the SQL Service, set the variable "install_location" to external to download 
 
 If set to internal, you will need to fill out the following variables:
 
-- file_share_user
-- file_share_password
-- file_server_ip
-- file_share_name
-- sql_iso_path (include path and iso file)
-- mapped_drive
+- install_location     internal
+- file_share_user      administrator
+- file_share_password  nutanix/4u
+- file_server_ip       10.21.66.59
+- file_share_name      sql
+- sql_iso_path (include path and iso file)  SQLServer2014!
+- mapped_drive         z
 
 
 Enable CredSSP
