@@ -63,12 +63,14 @@ On the SQL Service, set the variable "install_location" to external to download 
 
 If set to internal, you will need to fill out the following variables:
 
-- file_share_user
-- file_share_password
-- file_server_ip
-- file_share_name
-- sql_iso_path (include path and iso file)
-- mapped_drive
+.. code-block:: bash
+
+    - file_share_user
+    - file_share_password
+     - file_server_ip
+    - file_share_name
+    - sql_iso_path (include path and iso file)
+    - mapped_drive
 
 
 Enable CredSSP
@@ -76,7 +78,12 @@ Enable CredSSP
 To Enable CredSSP on the Karan host, please follow steps below:
 
 1. On the Karan Host run the following command to enable CredSSP as a client role and allow Karan host to Delegate credentials to all computers ( Wild card mask "*")
- Enable-WSManCredSSP -Role Client -DelegateComputer *
+
+.. code-block:: bash
+
+    > Powershell
+    Enable-WSManCredSSP -Role Client -DelegateComputer *
+    
 2. From command prompt window run “gpedit.msc”
 3. In the group policy editor window Goto Computer-configuration -> administrative templates -> system ->credential delegation
 4. Double click on “Allow Delgating Fresh Credentials with NTLM-only server authentication”
