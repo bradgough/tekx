@@ -80,7 +80,7 @@ To Enable CredSSP on the Karan host, please follow steps below:
 2. From command prompt window run “gpedit.msc”
 3. In the group policy editor window Goto Computer-configuration -> administrative templates -> system ->credential delegation
 4. Double click on “Allow Delgating Fresh Credentials with NTLM-only server authentication”
-5. Select Enable radio button
+5. Select Enabled radio button
 6. Click on the show button
 7. In the value field add  “WSMAN/*”. This allows delegate fresh credentials to WSMAN running in any remote computer
 
